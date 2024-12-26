@@ -1,5 +1,7 @@
 package testCases;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -22,7 +24,7 @@ public class TC001_AccountRegistrationTest extends BaseClass {
 		regpage.clickSubmit();
 
 		String cnf = regpage.getConfirmationMsg();
-		Assert.assertEquals(cnf, "User successfully registered.");
+		AssertJUnit.assertEquals(cnf, "User successfully registered.");
 	}
 
 }

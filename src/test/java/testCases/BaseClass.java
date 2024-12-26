@@ -1,5 +1,7 @@
 package testCases;
 
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeClass;
 import java.time.Duration;
 
 import org.apache.commons.lang3.RandomStringUtils;
@@ -23,6 +25,7 @@ public class BaseClass {
 
 	}
 
+	@AfterMethod
 	@AfterClass
 	void tearDown() {
 		driver.quit();
